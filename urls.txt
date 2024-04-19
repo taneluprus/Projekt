@@ -1,0 +1,7 @@
+https://developer.spotify.com/documentation/web-api/tutorials/getting-started
+
+https://open.spotify.com/playlist/48D31vGxnwMTZQhQ080KKy
+
+https://developer.spotify.com/dashboard/create
+
+https://spotipy.readthedocs.io/en/2.22.1/
