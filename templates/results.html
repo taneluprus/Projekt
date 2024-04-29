@@ -1,10 +1,34 @@
 <!doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Result page!</h1>
-        <a href="/" class="link">main</a>
-    </body>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Result page</h1>
+    <h2>Last Results</h2>
+    <table class="results-table">
+		<thead>
+			<tr>
+				<th>Score</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>1</td>
+			</tr>
+		</tbody>
+	</table>
+    <a href="/" class="button-86">main</a>
 </html>
