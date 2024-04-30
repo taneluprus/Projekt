@@ -11,15 +11,6 @@ body {
     font-family: fantasy;
 }
 
-.gif {
-  position: fixed;
-  top: 5px;
-  right: 5px;
-  z-index: 9999;
-  width: 100px;
-  height: auto;
-}
-
 h1 {
     color: rgb(0, 0, 0);
     text-align: center;
