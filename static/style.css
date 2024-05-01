@@ -6,8 +6,6 @@ body {
   min-height: 100vh;
   background-size: var(--s) var(--s);
   margin: 0;
-  font-family: sans-serif;
-  font-weight: 100;
   font-family: fantasy;
   position: relative;
 }
