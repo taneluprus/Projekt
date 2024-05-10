@@ -3,7 +3,10 @@ window.onload = function () {
     i = Math.floor(Math.random()*files.length);
     var array = files[i].split(' - '),
     artist = array[0], track = array[1];
+    alert(artist, track)
+
 }
+
 
 
 function play() {
