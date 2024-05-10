@@ -2,6 +2,11 @@
 <html>
 <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<script>
+		window.onload = function() {
+			document.getElementById("result").innerHTML = localStorage.score
+		}
+	</script>
 </head>
 <body>
     <h1>Result page</h1>
@@ -9,7 +14,7 @@
     <table class="results-table">
 		<thead>
 			<tr>
-				<th>Score</th>
+				<th id="result">Score</th>
 			</tr>
 		</thead>
 		<tbody>

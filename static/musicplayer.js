@@ -5,7 +5,7 @@ files = ['ARTIST - test.wav', 'ARTIST2 - test2.wav', 'ARTIST3 - test3.wav', 'ART
 i = Math.floor(Math.random()*files.length);
 var array = files[i].split(' - '),
 artist = array[0], track = array[1];
-alert(artist, track)
+//alert(artist, track)
 
 
 
@@ -16,5 +16,8 @@ function play() {
   }
 
 function check() {
-    alert(artist)
+    guess = document.getElementById("guess").value
+    console.log(guess+"|"+artist)
+    localStorage.score = 0 + (guess == artist)
+    window.location.href = "results"
 }
