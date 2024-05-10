@@ -3,8 +3,10 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <script>
-        if (localStorage.option){
-            document.getElementById("asdasd").innerHTML = localStorage.option
+        window.onload = function () {
+            if (localStorage.option){
+                document.getElementById("asdasd").innerHTML = localStorage.option
+            }
         }
     </script>
 </head>
