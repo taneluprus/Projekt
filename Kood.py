@@ -20,6 +20,10 @@ def results():
 def settings():
     return render_template("settings.html")
 
+@app.route('/favicon.ico')
+def favicon():
+    return app.send_static_file('favicon.ico')
+
 if __name__ == '__main__':
     app.run(debug=True)
 
