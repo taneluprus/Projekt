@@ -3,7 +3,7 @@ window.onload = function () {
     localStorage.score = 0
   }
 }
-files = ['Black Sabbath - Iron Man.mp4', 'Megadeth - A Tout Le Monde.mp4', 'Metallica - Master of Puppets.mp4','Sabaton - The Last Stand.mp4','AC/DC - Back in Blac.mp4',],
+files = ['Black Sabbath - Iron Man.mp4', 'Megadeth - A Tout Le Monde.mp4', 'Metallica - Master of Puppets.mp4','SABATON - The Last Stand.mp4','ACDC - Back in Black.mp4',],
 i = Math.floor(Math.random()*files.length);
 var array = files[i].split(' - '),
 artist = array[0], track = array[1];
