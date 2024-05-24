@@ -3,9 +3,6 @@ window.onload = function () {
     localStorage.score = 0
   }
 }
-import fs from 'fs'
-var filenames = fs.readdirSync('static\\testmusicfolder\\Metal');
-console.log(filenames)
 files = ['Black Sabbath - Iron Man.mp4', 'Megadeth - A Tout Le Monde.mp4', 'Metallica - Master of Puppets.mp4','Sabaton - The Last Stand.mp4','AC/DC - Back in Blac.mp4',],
 i = Math.floor(Math.random()*files.length);
 var array = files[i].split(' - '),
