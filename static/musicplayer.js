@@ -12,7 +12,7 @@ artist = array[0], track = array[1];
 
 
 function play() {
-    var path = 'static/testmusicfolder/Metal/'
+    var path = 'static/musicfolder/Metal/'
     var audio = new Audio(path+files[i]);
     audio.play();
   }
