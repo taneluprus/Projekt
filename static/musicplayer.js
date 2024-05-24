@@ -2,8 +2,8 @@ window.onload = function () {
   
 }
 import fs from 'fs'
-var files = fs.readdirSync('static\testmusicfolder\\Metal');
-console.log(files)
+var filenames = fs.readdirSync('static\\testmusicfolder\\Metal');
+console.log(filenames)
 files = ['Black Sabbath - Iron Man.mp4', 'Megadeth - A Tout Le Monde.mp4', 'Metallica - Master of Puppets.mp4','Sabaton - The Last Stand.mp4','AC/DC - Back in Blac.mp4',],
 i = Math.floor(Math.random()*files.length);
 var array = files[i].split(' - '),
