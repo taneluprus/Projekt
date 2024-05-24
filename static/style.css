@@ -1,4 +1,5 @@
 body {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +12,7 @@ body {
 h1 {
   color: rgb(0, 0, 0);
   text-align: center;
-  font-size: 10em;
+  font-size: 7em;
   line-height: 0.001;
 }
 
@@ -20,6 +21,11 @@ h2 {
   text-align: center;
   font-size: 8em;
   line-height: 0.001;
+}
+
+a {
+  color: #f0f0f0;
+  font-size: 1em;
 }
 
 .button-container {
@@ -96,18 +102,6 @@ h2 {
   transform: translate(0, 5%);
 }
 
-.results-table {
-  width: 60%;
-  margin: 40px auto;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.results-table th,
-.results-table td {
-  text-align: center;
-  font-size: 70px;
-}
-
 .png {
   position: absolute;
   left: 790px;
@@ -118,16 +112,16 @@ h2 {
 
 .png1 {
   position: absolute;
-  right: 150px;
-  top: 500px;
+  right: 100px;
+  top: 200px;
   width: 700px;
   height: auto;
 }
 
 .png2 {
   position: absolute;
-  left: 150px;
-  top: 500px;
+  left: 50px;
+  top: 200px;
   width: 800px;
   height: auto;
 }
@@ -141,5 +135,7 @@ h2 {
 }
 
 .result {
-  background-color: #28282d;
+  color: #f0f0f0;
+  font-size: 100px;
+  margin: 20px;
 }

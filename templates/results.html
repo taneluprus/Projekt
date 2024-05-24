@@ -4,37 +4,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 	<script>
 		window.onload = function() {
-			document.getElementById("result").innerHTML = localStorage.score
+			document.getElementById("result").innerHTML = "Score: " + localStorage.score
 		}
 	</script>
 </head>
 <body>
     <h1>Result page</h1>
-    <h2>Last Results</h2>
-    <table class="results-table">
-		<thead>
-			<tr>
-				<th id="result">Score</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>6</td>
-			</tr>
-			<tr>
-				<td>8</td>
-			</tr>
-			<tr>
-				<td>3</td>
-			</tr>
-			<tr>
-				<td>5</td>
-			</tr>
-			<tr>
-				<td>1</td>
-			</tr>
-		</tbody>
-	</table>
+	<a id="result" class="result">Score:  </a>
     <a href="/" class="button">main</a>
 	<img src="static/12.png" alt="Image 3" class="png1">
 	<img src="static/14.png" alt="Image 3" class="png2">
