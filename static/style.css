@@ -47,6 +47,7 @@ h2 {
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-right: 50px;
+  margin-bottom: 20px;
 }
 
 .button::after,
@@ -130,3 +131,12 @@ h2 {
   width: 800px;
   height: auto;
 }
+
+.option {
+  background-color: #28282d;
+  color: #f0f0f0;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
