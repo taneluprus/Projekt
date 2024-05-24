@@ -21,5 +21,10 @@ def settings():
 def favicon():
     return app.send_static_file('favicon.ico')
 
+#@app.route('/Music/<path>')
+#def music():
+#    return app.send
+#
+
 if __name__ == '__main__':
     app.run(debug=True)
