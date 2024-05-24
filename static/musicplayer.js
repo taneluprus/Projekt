@@ -1,5 +1,7 @@
 window.onload = function () {
-  
+  if (localstorage.round == 1 || !localStorage.score) {
+    localStorage.score = 0
+  }
 }
 import fs from 'fs'
 var filenames = fs.readdirSync('static\\testmusicfolder\\Metal');
@@ -21,6 +23,15 @@ function play() {
 function check() {
     guess = document.getElementById("guess").value
     console.log(guess+"|"+artist)
-    localStorage.score = 0 + (guess == artist)
-    window.location.href = "results"
+    localStorage.score = localStorage.score + (guess == artist)
+    if (localStorage.round) {
+      localStorage.round += 1
+    }
+    else {
+        localStorage.round = 1
+    }
+    if (localStorage.round > 3) {
+      localStorage.round = 1
+      window.location.href = "results"
+    }
 }
