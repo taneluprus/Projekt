@@ -1,7 +1,10 @@
 window.onload = function () {
   
 }
-files = ['ARTIST - test.wav', 'ARTIST2 - test2.wav', 'ARTIST3 - test3.wav', 'ARTIST4 - test4.wav', 'ARTIST5 - test5.wav'],
+import fs from 'fs'
+var files = fs.readdirSync('static\testmusicfolder\\Metal');
+console.log(files)
+files = ['Black Sabbath - Iron Man.mp4', 'Megadeth - A Tout Le Monde.mp4', 'Metallica - Master of Puppets.mp4','Sabaton - The Last Stand.mp4','AC/DC - Back in Blac.mp4',],
 i = Math.floor(Math.random()*files.length);
 var array = files[i].split(' - '),
 artist = array[0], track = array[1];
@@ -10,7 +13,7 @@ artist = array[0], track = array[1];
 
 
 function play() {
-    var path = 'static/testmusicfolder/Music1/'
+    var path = 'static/testmusicfolder/Metal/'
     var audio = new Audio(path+files[i]);
     audio.play();
   }
