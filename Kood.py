@@ -26,13 +26,14 @@ def favicon():
 #[TODO] F I N I S H  T H I S  T H I N G
 songnamesdict={}
 import os
-genreslist = (os.listdir('C:\\Users\\uprus.tl6a493\\Desktop\\Projekt\\Projekt-1\\static\\musicfolder\\'))
+genreslist = (os.listdir('static\\musicfolder\\'))
 print(genreslist)
 a=0
 for x in genreslist:
-    songslist=(os.listdir(('C:\\Users\\uprus.tl6a493\\Desktop\\Projekt\\Projekt-1\\static\\musicfolder\\',genreslist[a])))
+    songslist=(os.listdir(('\\static\\musicfolder\\',genreslist[a])))
     songnamesdict[genreslist[a]]=songslist
 
 print(songnamesdict)
+
 if __name__ == '__main__':
     app.run(debug=True)
