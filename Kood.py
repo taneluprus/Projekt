@@ -22,21 +22,34 @@ def favicon():
     return app.send_static_file('favicon.ico')
 
 
+@app.route('/songs')
+def songs():
+    songnamesdict={}
+    genreslist = (os.listdir('static\\musicfolder\\'))
+    a=0
+    for x in genreslist:
+        filepath=os.path.join('static\\musicfolder\\',genreslist[a])
+        songslist=(os.listdir(filepath))
+        #print(songslist)
+        songnamesdict[genreslist[a]]=songslist
+        a+=1
+        
+    return(songnamesdict)
+
 #Saada info Json palun
 #[TODO] F I N I S H  T H I S  T H I N G
-songnamesdict={}
-import os
-genreslist = (os.listdir('static\\musicfolder\\'))
-print(genreslist)
-a=0
-for x in genreslist:
-    filepath=os.path.join('static\\musicfolder\\',genreslist[a])
-    songslist=(os.listdir(filepath))
-    print(songslist)
-    songnamesdict[genreslist[a]]=songslist
-    a+=1
-
-print(songnamesdict)
+#songnamesdict={}
+#import os
+#genreslist = (os.listdir('static\\musicfolder\\'))
+#print(genreslist)
+#a=0
+#for x in genreslist:
+#    filepath=os.path.join('static\\musicfolder\\',genreslist[a])
+#    songslist=(os.listdir(filepath))
+#    print(songslist)
+#    songnamesdict[genreslist[a]]=songslist
+#    a+=1
+#print(songnamesdict)
 
 if __name__ == '__main__':
     app.run(debug=True)
