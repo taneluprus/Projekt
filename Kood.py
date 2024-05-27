@@ -26,10 +26,10 @@ def favicon():
 @app.route('/songs')
 def songs():
     songnamesdict={}
-    genreslist = (os.listdir('static\\musicfolder\\'))
+    genreslist = (os.listdir(os.path.join('static','musicfolder')))
     a=0
     for x in genreslist:
-        filepath=os.path.join('static\\musicfolder\\',genreslist[a])
+        filepath=os.path.join('static', 'musicfolder',genreslist[a])
         songslist=(os.listdir(filepath))
         #print(songslist)
         songnamesdict[genreslist[a]]=songslist
