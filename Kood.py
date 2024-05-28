@@ -6,6 +6,10 @@ app=Flask(__name__, template_folder="templates")
 def main():
     return render_template("main.html")
 
+@app.route("/selection")
+def selection():
+    return render_template("selection.html")
+
 @app.route("/game")
 def game():
     return render_template("game.html")

@@ -2,6 +2,7 @@ window.onload = function () {
   if (localStorage.round == 1 || !localStorage.score) {
     localStorage.score = 0
   }
+  document.getElementById("genre").innerHTML = localStorage.genre;
 }
 files = ['Black Sabbath - Iron Man.mp4', 'Megadeth - A Tout Le Monde.mp4', 'Metallica - Master of Puppets.mp4','SABATON - The Last Stand.mp4','ACDC - Back in Black.mp4',],
 i = Math.floor(Math.random()*files.length);
