@@ -2,9 +2,10 @@ window.onload = function () {
   if (localStorage.round == 1 || !localStorage.score) {
     localStorage.score = 0
   }
-  document.getElementById("genre").innerHTML = localStorage.genre;
+  document.getElementById("genre").innerHTML = localStorage.genre + artist + track;
 }
-files = ['Black Sabbath - Iron Man.mp4', 'Megadeth - A Tout Le Monde.mp4', 'Metallica - Master of Puppets.mp4','SABATON - The Last Stand.mp4','ACDC - Back in Black.mp4',],
+//files = ['Black Sabbath - Iron Man.mp4', 'Megadeth - A Tout Le Monde.mp4', 'Metallica - Master of Puppets.mp4','SABATON - The Last Stand.mp4','ACDC - Back in Black.mp4',]
+files = localStorage.songs[localStorage.genre]
 i = Math.floor(Math.random()*files.length);
 var array = files[i].split(' - '),
 artist = array[0], track = array[1];
@@ -33,6 +34,6 @@ function check() {
       window.location.href = "results"
     }
     else {
-      window.location.href = "game"
+      //window.location.href = "game"
     }
 }
