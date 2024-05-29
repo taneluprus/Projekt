@@ -14,7 +14,7 @@ function createoptions(songs) {
     genres = document.getElementById("genres");
     var songstring = ""
     for (genre in songs) {
-        songstring = songstring + `<button onclick="{localStorage.genre = '${genre}'; window.location.href = '/game'}">${genre}</button><br>`
+        songstring = songstring + `<button class="button" onclick="{localStorage.genre = '${genre}'; window.location.href = '/game'}">${genre}</button><br>`
     }
     genres.innerHTML = songstring;
 }
