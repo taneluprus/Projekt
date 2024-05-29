@@ -10,10 +10,9 @@ window.onload = function () {
 }
 
 function createoptions(songs) {
-    localStorage.songs = songs
+    localStorage.songs = JSON.stringify(songs);
     genres = document.getElementById("genres");
     var songstring = ""
-    //songstring = `${JSON.stringify(songs)}<br>`
     for (genre in songs) {
         songstring = songstring + `<button onclick="{localStorage.genre = '${genre}'; window.location.href = '/game'}">${genre}</button><br>`
     }
