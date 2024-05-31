@@ -1,4 +1,5 @@
 window.onload = function () {
+    localStorage.round = 1;
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {

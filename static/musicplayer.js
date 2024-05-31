@@ -15,7 +15,8 @@ window.onload = function () {
 }
 
 genre = localStorage.genre;
-files = JSON.parse(localStorage.songs)[genre];
+songs = JSON.parse(localStorage.songs);
+files = songs[genre];
 i = Math.floor(Math.random()*files.length);
 var array = files[i].split(' - ');
 artist = array[0].toLowerCase(), track = array[1].toLowerCase();
@@ -51,6 +52,10 @@ function check() {
 }
 
 function next() {
+  files.splice(i, 1);
+  songs[genre] = files;
+  localStorage.songs = JSON.stringify(songs);
+
   if (localStorage.round) {
     localStorage.round = Number(localStorage.round) + 1;
   }
@@ -58,7 +63,6 @@ function next() {
     localStorage.round = 1;
   }
   if (Number(localStorage.round) > rounds) {
-    localStorage.round = 1;
     window.location.href = "results";
   }
   else {
