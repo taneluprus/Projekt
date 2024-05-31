@@ -9,6 +9,7 @@ window.onload = function () {
     xmlHttp.send(null);
 }
 
+//Genres
 function createoptions(songs) {
     localStorage.songs = JSON.stringify(songs);
     genres = document.getElementById("genres");

@@ -29,13 +29,14 @@ if (localStorage.rounds) {
   rounds = Number(localStorage.rounds);
 }
 
-
+//Musicplayer
 function play() {
   var audio = new Audio(`static/musicfolder/${genre}/${files[i]}`);
   audio.volume = volume;
   audio.play();
 }
 
+//Function to compare guess to artist
 function check() {
   guess = document.getElementById("guess").value.toLowerCase();
   //console.log(guess+"|"+artist);
