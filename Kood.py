@@ -1,5 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for #Imports flask stuff
-import os #Imports linux
+import os #Imports Hannah Montana Linux
+import webbrowser
+
+webbrowser.open('http://127.0.0.1:5000')
 
 app=Flask(__name__, template_folder="templates")
 @app.route("/")
