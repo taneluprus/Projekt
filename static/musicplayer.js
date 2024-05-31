@@ -4,7 +4,6 @@ window.onload = function () {
   }
   document.getElementById("genre").innerHTML = localStorage.genre;
 }
-//files = ['Black Sabbath - Iron Man.mp4', 'Megadeth - A Tout Le Monde.mp4', 'Metallica - Master of Puppets.mp4','SABATON - The Last Stand.mp4','ACDC - Back in Black.mp4',]
 genre = localStorage.genre;
 files = JSON.parse(localStorage.songs)[genre];
 i = Math.floor(Math.random()*files.length);
