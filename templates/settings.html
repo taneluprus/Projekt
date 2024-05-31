@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <script src="{{url_for('static', filename='settings.js')}}" defer></script>
+    </head>
+    <body>
+        <h1>Settings!</h1>
+        <input class="option" type="range" name="volume" id="volume" min="0" max="100"/>
+        <label class="label" for="volume" id="volumelabel">Volume</label>
+        <input class="option" type="range" name="rounds" id="rounds" min="1" max="5"/>
+        <label class="label" for="rounds" id="roundslabel">Rounds</label>
+        <a href="/" class="button">main</a>
+    </body>
+</html>

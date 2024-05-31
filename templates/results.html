@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<script>
+		window.onload = function() {
+			document.getElementById("result").innerHTML = `Score: ${localStorage.score}/${localStorage.rounds}`
+		}
+	</script>
+</head>
+<body>
+    <h1>Results!</h1>
+	<a id="result" class="result">Score:  </a>
+    <a href="/" class="button">main</a>
+	<div class="image-container">
+		<img src="static/14.png" class="png">
+		<img src="static/12.png" class="png1">
+	</div>
+</body>
+</html>
