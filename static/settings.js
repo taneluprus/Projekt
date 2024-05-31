@@ -3,6 +3,7 @@ var volumelabel
 var roundsslider
 var roundslabel
 
+//Volume slider setting
 volumeslider = document.getElementById("volume");
 volumelabel = document.getElementById("volumelabel");
 if (localStorage.volume) {
@@ -17,6 +18,7 @@ volumeslider.oninput = function() {
     localStorage.volume = this.value
 }
 
+//Mitu laulu tuleb
 roundsslider = document.getElementById("rounds");
 roundslabel = document.getElementById("roundslabel");
 if (localStorage.rounds) {
