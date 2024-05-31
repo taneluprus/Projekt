@@ -1,0 +1,10 @@
+REQUIERMENTS - Python 3, Browser(Internet Explorer > 10, Netscape Navigator not supported)
+PYTYHON MODULE REQUIERMENTS - flask, os, webbrowser
+
+Jooksutage faili "main.py", mis peaks automaatselt avama vaikebrauseris lehe, kus asub  mäng. Kui leht automaatselt ei avana, avage brauseris url "http://127.0.0.1:5000/"
+Mängu eesmärk on muusika järgi arvata loo autor(bänd). Seadetest saab muuta helitugevust ja ühe mängu pikkust.ä
+Kui vajutada nuppu "game" avaneb leht, kus saab valida muusika zanri.
+Kui zanr on valitud algab mäng automaatselt. Vajutades nuppu "play" hakkab muusika mängima.
+Ekraani keskele saab kirjutada loo artisti pakkumise. Nuppu "check" vajutamine paneb tekstikasti
+lukku ja ütleb, kas arvamus oli õige või vale. Peale seda on vaja vajutada nuppu "next", mis viib järgmise laulu lehele.
+Mängu lõpus on leht, mis näitab kogutulemust. Sealt viib nupp "main" tagasi esilehele.
