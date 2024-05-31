@@ -52,8 +52,8 @@ a {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-right: 50px;
-  margin-bottom: 20px;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 .button::after,
