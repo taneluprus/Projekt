@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 	<script>
 		window.onload = function() {
-			document.getElementById("result").innerHTML = "Score: " + localStorage.score
+			document.getElementById("result").innerHTML = `Score: ${localStorage.score}/${localStorage.rounds}`
 		}
 	</script>
 </head>
