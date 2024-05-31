@@ -40,7 +40,6 @@ def songs():
     for x in genreslist:
         filepath=os.path.join('static', 'musicfolder',genreslist[a])
         songslist=(os.listdir(filepath))
-        #print(songslist)
         songnamesdict[genreslist[a]]=songslist
         a+=1
 
