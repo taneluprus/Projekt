@@ -1,4 +1,4 @@
 # Projekt
 Muusika arvamine
 
-Arvata muusikat on nüüd ülesanne
+Tuleb ära arvata teose autor
