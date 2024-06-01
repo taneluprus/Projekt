@@ -51,6 +51,7 @@ function check() {
   nextButton.style.display = 'block';
 }
 
+//Next song
 function next() {
   files.splice(i, 1);
   songs[genre] = files;

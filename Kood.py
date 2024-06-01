@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for #Imports fl
 import os #Imports Hannah Montana Linux
 import webbrowser
 
+#Automatically opens game in webbrowser
 webbrowser.open('http://127.0.0.1:5000')
 
 app=Flask(__name__, template_folder="templates")
