@@ -141,3 +141,8 @@ a {
   font-size: 5vw;
   margin: 20px;
 }
+
+.column {
+  float: left;
+  width: 50%;
+}
