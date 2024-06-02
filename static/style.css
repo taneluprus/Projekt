@@ -147,6 +147,8 @@ a {
             justify-content: space-between; 
             flex-wrap: wrap; 
         }
-        .column {
+
+.column {
             width: 48%; 
             margin-bottom: 10px;
+}
