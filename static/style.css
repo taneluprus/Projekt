@@ -30,7 +30,7 @@ a {
 }
 
 .button-container {
-  display: flex;
+  display: block;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
