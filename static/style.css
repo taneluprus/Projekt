@@ -166,3 +166,8 @@ a {
   margin-bottom: 40px; 
   margin-top: 40px;
 }
+
+.column {
+  float: left;
+  width: 50%;
+}
