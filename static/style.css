@@ -142,7 +142,12 @@ a {
   margin: 20px;
 }
 
+.columns {
+  display: flex; 
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+}
 .column {
-  float: left;
-  width: 50%;
+  width: 48%; 
+  margin-bottom: 10px; 
 }
