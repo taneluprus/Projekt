@@ -13,16 +13,16 @@ window.onload = function () {
 //Genres
 function createoptions(songs) {
     localStorage.songs = JSON.stringify(songs);
-    genres = document.getElementById("genres");
-    var songstring = ""
+    var genres = document.getElementById("genres");
+    var songstring = "";
     var count = 0;
     for (var genre in songs) {
         if (count % 4 == 0) {
-            songstring += "</div><div class='column'>";
+            songstring += "</div><div class='column'>"; 
         }
         songstring += `<button class="button" onclick="localStorage.genre = '${genre}'; window.location.href = '/game'">${genre}</button><br>`;
         count++;
     }
-    songstring += "</div>";
-    genres.innerHTML = songstring;
+    songstring += "</div>"; 
+    genres.innerHTML = songstring; 
 }
