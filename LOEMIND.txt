@@ -1,5 +1,6 @@
 REQUIERMENTS - Python 3, Browser(Internet Explorer > 10, Netscape Navigator NOT SUPPORTED)
 PYTYHON MODULE REQUIERMENTS - flask, os, webbrowser
+MacOS support not guaranteed
 
 Jooksutage faili "main.py", mis peaks automaatselt avama vaikebrauseris lehe, kus asub  mäng. Kui leht automaatselt ei avana, avage brauseris url "http://127.0.0.1:5000/"
 Mängu eesmärk on muusika järgi arvata loo autor(bänd). Seadetest saab muuta helitugevust ja ühe mängu pikkust.ä
