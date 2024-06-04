@@ -9,3 +9,5 @@ Kui zanr on valitud algab mäng automaatselt. Vajutades nuppu "play" hakkab muus
 Ekraani keskele saab kirjutada loo artisti pakkumise. Nuppu "check" vajutamine paneb tekstikasti
 lukku ja ütleb, kas arvamus oli õige või vale. Peale seda on vaja vajutada nuppu "next", mis viib järgmise laulu lehele.
 Mängu lõpus on leht, mis näitab kogutulemust. Sealt viib nupp "main" tagasi esilehele.
+
+!!!MÄNGUS EI OLE KORDAGI KASUTATUD CHATGPT-D VÕI MÕNDA MUUD TEHISINTELLEKTI!!!
